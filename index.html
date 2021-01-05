@@ -14,85 +14,155 @@
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="css/scrolling-nav.css" rel="stylesheet">
+  <link href="css/default.css" rel="stylesheet">
 
 </head>
 
 <body id="page-top">
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #3B68BB;" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Ajuda</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            <a class="nav-link js-scroll-trigger" href="#about">Informació general</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+            <a class="nav-link js-scroll-trigger" href="#pages">Pàgines</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            <a class="nav-link js-scroll-trigger" href="#alumnes">Alumnes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#professors">Professors/Entitats</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#admins">Administradors</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <header class="bg-primary text-white">
-    <div class="container text-center">
-      <h1>Welcome to Scrolling Nav</h1>
-      <p class="lead">A landing page template freshly redesigned for Bootstrap 4</p>
-    </div>
-  </header>
-
   <section id="about">
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2>About this page</h2>
-          <p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
+        <div class="col-lg-12 mx-auto">
+          <h2>Informació general</h2>
+          <p class="lead">L'aplicació consisteix en una eina de suport per el seguiment d'activitats a la secció d'aprenentatge de servei, a més de proporcionar
+            facilitats per a la comunicació entre alumnes, professors i entitats mitjançant l'us de xats i pàgines específiques. 
+          </p>
+          <h4>Projectes</h4>
+          <p class="lead">Integrants d'un projecte més general amb possibilitat de diversos alumnes, professors i entitats. Només fa la funció de xat i dona la possibilitat de crear grups de treball.
+          </p>
+          <h4>Grups de treball</h4>
+          <p class="lead">Integrants d'un projecte separats en petits grups de treball (Alumne-Professor-Entitat) per fer el seguiment 
+            de l'alumne corresponent, aquí es poden fer posts i tasques al calendari. A més te la possibilitat de fer funció de xat.
+          </p>
+          <h4>Notificacions</h4>
+          <p class="lead">Les notificacions són en local, és a dir, per poder rebre es necessari tenir la aplicació oberta, ja sigui utilitzant-la o tenir-la de fons sense tancarla.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pages" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 mx-auto">
+          <h2>Pàgines</h2>
           <ul>
-            <li>Clickable nav links that smooth scroll to page sections</li>
-            <li>Responsive behavior when clicking nav links perfect for a one page website</li>
-            <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
-            <li>Minimal custom CSS so you are free to explore your own unique design options</li>
+            <li><b>Dashboard</b>: Pàgina principal on es troben tots els xats, hi ha la possibilitat de crear projectes (Administrador), 
+              creació xats individuals (Professor/Entitat/Administrador) amb la resta de la facultat, per això es necessari anar a la llista d'usuaris marcada
+              amb un icona de persones a la part superior. Un cop dins es veuran tots els alumnes de la facultat, en cas d'alumnes es veuran els
+              integrants dels seus grups de treball. A la part superior es troba un botó d'opcions on ens obrirà la posibilitat d'anar a configuració,
+              crear projectes(Administrador), canviar facultat (Super administrador), o refrescar xats, això últim no es necessàri per la sincronització,
+              però en cas d'una connexió lenta a internet es útil per asegurar que es reb tot bé.
+            </li>
+            <li><b>Projectes</b>: Tenim la possibilitat d'anar als nostres projectes assignats on es pot crear o eliminar un projecte (Administrador), anar als seus grups de treball evitant passar per els xats on es pot crear o eliminar un grup (Administrador/Professor) i anar als posts i calendari.
+            </li>
+            <li><b>Fitxers</b>: Aquí es troven tots els fitxers que s'envien i reben en els xats individuals, projectes o grups de treballs, amb la possibilitat
+              de compartir-los.
+            </li>
+            <li><b>Configuració</b>: Pàgina on tenim el nostre perfil i podem modificar les nostres dades, silenciar/activar notificacions dels xats i canviar el estil de l'aplicació.
+            </li>
+            <li><b>Xats individuals</b>: És poden enviar missatges, audios o imatges. Si es vol eliminar un missatge, en cas que sigui text, es pot fer amb doble click sobre el missatge, en cas d'imatge o audio s'ha 
+              d'utilitzar el botó d'opcions del missatge enviat, on també es pot compartir aquell fitxer.
+            </li>
+            <li><b>Xats projectes</b>: És poden enviar missatges, audios o imatges. Si es vol eliminar un missatge, en cas que sigui text, es pot fer amb doble click sobre el missatge, en cas d'imatge o audio s'ha 
+              d'utilitzar el botó d'opcions del missatge enviat, on també es pot compartir aquell fitxer. Desde aquí es pot anar als nostres grups assignats i crear/eliminar un (Administrador/Professor) mitjançant una icona de papers a la part superior del xat. Per afegir integrants al projecte 
+              en necessari anar a la pàgina de l'informació del xat polsant en el titol d'aquest.
+            </li>
+            <li><b>Xats grups</b>: És poden enviar missatges, audios o imatges. Si es vol eliminar un missatge, en cas que sigui text, es pot fer amb doble click sobre el missatge, en cas d'imatge o audio s'ha 
+              d'utilitzar el botó d'opcions del missatge enviat, on també es pot compartir aquell fitxer. A més es reben missatges de post fets per part d'un alumne o noves tasques afegides al calendari per part d'una entitat o
+              professor, es pot anar directament al post afegit o anar al calendari polsant al missatge corresponent. Desde aquí es pot anar a la pàgina de posts i al calendari. Per afegir integrants al grup és necessari anar a la pàgina de l'informació del xat polsant en el titol d'aquest.
+            </li>
+            <li><b>Posts</b>: Pàgina on es veuran tots els posts creats per l'alumne. Per que el post nou que es vulgui enviar s'accepti, és necessari que s'afegeixi una imatge, audio i un text 
+              amb l'explicació corresponent de que s'ha fet aquell dia. Per borrar un post es necessari anar al post corresponent fent click al post creat. Desde aquí es pot anar al xat del projecte i al calendari.
+            </li>
+            <li><b>Calendari</b>: Pàgina on es trova el calendari del grup de treball, per part de professor o entitat es poden crear noves tasques, es selecciona al calendari el dia que es vol
+              i es dona després al botó de crear tasca per seleccionar el títol i horari, per eliminar una tasca nomès s'ha de fer doble click a la tasca creada. Les tasques es poden veure mirant els diferents dies. 
+            </li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="services" class="bg-light">
+  <section id="alumnes">
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2>Services we offer</h2>
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
+        <div class="col-lg-12 mx-auto">
+          <h2>Alumnes</h2>
+          <p class="lead">Un cop creat el compte haureu d'esperar a que s'us assigni un projecte, o un professor crei un xat amb vosaltres per poder començar
+            a fer accions. Podeu modificar el vostre perfil  i canviar el estil de l'aplicació a la pàgina de configuració.
+          </p>
+          <p class="lead">Un cop teniu un projecte assignat us podreu comunicar amb la resta de participants del projecte mitjançant un xat, si no teniu un grup de treball
+            assignat encara no podreu començar a crear post diaris dels vostres treballs i veure quines tasques us han assignat
+          </p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="contact">
+  <section id="professors" class="bg-light">
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2>Contact us</h2>
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+        <div class="col-lg-12 mx-auto">
+          <h2>Professors/Entitats</h2>
+          <p class="lead">Heu d'esperar a que un administrador us assigni a un projecte, podeu crear xats amb usuaris de la facultat</p>
+          <p class="lead">Les accions especials com eliminar xats, grups o participants d'aquests es necessàri lliscar cap a la dreta l'element que es vol
+            modificar i s'ens donarà la opció de fer l'acció dessitjada.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="admins">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 mx-auto">
+          <h2>Administradors</h2>
+          <p class="lead">Heu de crear projectes per als alumnes, professors i entitats</p>
+          <p class="lead">Les accions especials com eliminar xats, grups, projectes o participants es necessàri lliscar cap a la dreta l'element que es vol
+            modificar i s'ens donarà la opció de fer l'acció dessitjada.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="py-5 bg-dark">
+  <footer class="py-4" style="background-color: #5377B9;">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+      <p class="m-0 text-center text-white">Copyright &copy; Fem ApS 2020</p>
     </div>
     <!-- /.container -->
   </footer>
@@ -105,7 +175,7 @@
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom JavaScript for this theme -->
-  <script src="js/scrolling-nav.js"></script>
+  <script src="js/script.js"></script>
 
 </body>
 
